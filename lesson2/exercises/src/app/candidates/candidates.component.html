@@ -30,9 +30,10 @@
             <h2>Selected Crew</h2>
             <ul>
                 <li *ngFor = "let selectedCrewDetail of crew">{{selectedCrewDetail.name}}</li>
-                <button *ngIf="crew.length!==0" (click) = "crew = []">Clear Data & Image</button>
+                  <!-- Add a "Clear Crew List" button here. -->
+                <button *ngIf="crew.length!==0" (click) = "crew = []">Clear Crew List</button>
             </ul>
-            <!-- Add a "Clear Crew List" button here. -->
+          
         </div>
     </div>
     <hr>
